@@ -1,15 +1,8 @@
 # Swift Concurrency Network Manager
 
-This project utilises Swift Concurrency to create a network manager. This project using swift actors to avoid data races, with careful checks for reentrancy bugs and using async/await for making network requests. 
+**To see how the network request were made. Look at the code in the SPM SwiftNetworkManager**
 
-This is what the network manager can do using swift actors and async/await:
-- Log where username and password are coming in the form of `form-data`
-- `HTTP GET`
-- `HTTP POST`
-- `HTTP PATCH`
-- `HTTP PUT`
-- `HTTP DELETE`
-- In an event where a `401` is returned. Initial assumption is that the token has expired. The request is re-tried with new token
+Example repo using Network Manager from https://github.com/Muhammed9991/SwiftNetworkManager.
 
 As part of this project, I create a login and log out screen (see below). The API I was using in this was a locally hosted API created using FastAPI from this (highly reccomended) tutorial https://www.youtube.com/watch?v=0sOvCWFmrtA&t=33685s, written in python. 
 
@@ -33,9 +26,7 @@ In the API I created all endpoints were protected using a JWT token. To access a
  - Password deleted from keychain
  - Token deleted from keychain
  - Navigate back to login screen
- 
- I've included some comments inside some files to give more of an overview. 
- 
+  
  Note: the login and logout screen were pretty basic, there is no validation check to see if email address is correct format etc. This was only created to test the network manager.
  
 | Login Screen  |  Logout Screen |
