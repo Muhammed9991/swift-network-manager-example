@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794AB5E0292E56010064F526 /* NetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 794AB5DF292E56010064F526 /* NetworkManager */; };
 		79DAFB5F292A2A920029F7B1 /* SwiftConcurrencyNetworkManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DAFB5E292A2A920029F7B1 /* SwiftConcurrencyNetworkManagerApp.swift */; };
 		79DAFB61292A2A920029F7B1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DAFB60292A2A920029F7B1 /* LoginScreen.swift */; };
 		79DAFB63292A2A930029F7B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79DAFB62292A2A930029F7B1 /* Assets.xcassets */; };
@@ -22,7 +23,6 @@
 		79DAFB62292A2A930029F7B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79DAFB65292A2A930029F7B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79DAFB70292A34350029F7B1 /* LogOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutView.swift; sourceTree = "<group>"; };
-		79DAFB76292A387E0029F7B1 /* NetworkManager */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkManager; path = ../../Desktop/NetworkManager; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79DAFB6F292A2C070029F7B1 /* NetworkManager in Frameworks */,
+				794AB5E0292E56010064F526 /* NetworkManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +41,6 @@
 		79DAFB52292A2A920029F7B1 = {
 			isa = PBXGroup;
 			children = (
-				79DAFB75292A387E0029F7B1 /* Packages */,
 				79DAFB5D292A2A920029F7B1 /* SwiftConcurrencyNetworkManager */,
 				79DAFB5C292A2A920029F7B1 /* Products */,
 				79DAFB6D292A2C070029F7B1 /* Frameworks */,
@@ -82,14 +82,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		79DAFB75292A387E0029F7B1 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				79DAFB76292A387E0029F7B1 /* NetworkManager */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +100,7 @@
 			name = SwiftConcurrencyNetworkManager;
 			packageProductDependencies = (
 				79DAFB6E292A2C070029F7B1 /* NetworkManager */,
+				794AB5DF292E56010064F526 /* NetworkManager */,
 			);
 			productName = SwiftConcurrencyNetworkManager;
 			productReference = 79DAFB5B292A2A920029F7B1 /* SwiftConcurrencyNetworkManager.app */;
@@ -137,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 79DAFB52292A2A920029F7B1;
+			packageReferences = (
+				794AB5DE292E56010064F526 /* XCRemoteSwiftPackageReference "SwiftNetworkManager" */,
+			);
 			productRefGroup = 79DAFB5C292A2A920029F7B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,7 +363,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		794AB5DE292E56010064F526 /* XCRemoteSwiftPackageReference "SwiftNetworkManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Muhammed9991/SwiftNetworkManager";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		794AB5DF292E56010064F526 /* NetworkManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 794AB5DE292E56010064F526 /* XCRemoteSwiftPackageReference "SwiftNetworkManager" */;
+			productName = NetworkManager;
+		};
 		79DAFB6E292A2C070029F7B1 /* NetworkManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NetworkManager;

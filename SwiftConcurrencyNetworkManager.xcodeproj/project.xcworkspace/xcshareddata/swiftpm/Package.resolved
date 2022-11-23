@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftnetworkmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Muhammed9991/SwiftNetworkManager",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e07058f8d8a51ad53b6f76705a9d31844e710669"
+      }
+    }
+  ],
+  "version" : 2
+}
